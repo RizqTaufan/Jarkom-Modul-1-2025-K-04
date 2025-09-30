@@ -1,5 +1,5 @@
 # Jarkom-Modul-1-2025-K-04
 
-#LAPORAN RESMI MODUL 1
-## ANGGOTA :
-### Diva Aulia Rosa 5027241003
+
+# LAPORAN RESMI MODUL 1
+## ANGGOTA : Diva Aulia Rosa 5027241003
