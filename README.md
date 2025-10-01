@@ -110,6 +110,19 @@ Setelah semua Ainur terhubung ke internet, Melkor mencoba menyusup ke dalam komu
 </br> <img width="1497" height="776" alt="Screenshot 2025-09-29 222354" src="https://github.com/user-attachments/assets/418a2b7d-0848-489b-90f7-48b2b39ef044" />
 </br> - Setelah berhasil masuk pada project kelompok maka, akan muncul topologi jaringan yang sudah dibuat sebelumnya pada web
 </br> <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2365d321-4964-4dd8-be55-23505439f7dd" />
+</br> - Jangan lupa download file yang disediakan pada soal, file soal berisi traffic.sh yang didalamnya terdapat code :
+</br> <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f4ccf626-4db7-428c-a0a8-a5101290ef01" />
+</br> - Pada soal kita berperan sebagai Melkor, maka kita akan masuk sebagai Melkor pada terminal dengan menggonakan alamat Melkor yang sudah tersedia. Tapi sebelumnya kita akan mengcapture semua yang terjadi pada gateway 1 dengan start capture, maka otomatis wireshark akan terbuka
+</br> <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0cf21c2e-219d-4a3f-a217-78685868724d" />
+</br> <img width="1004" height="217" alt="Screenshot 2025-09-29 223455" src="https://github.com/user-attachments/assets/f316c3c4-e607-452d-b39b-512a5400abef" />
+</br> - Ketika sudah masuk ke melkor, kita buat script dengan menyalin apa yang ada di dalam traffic.sh
+</br> <img width="1558" height="863" alt="Screenshot 2025-09-29 223614" src="https://github.com/user-attachments/assets/f2d2eb97-656d-46d9-8512-232449991cf7" />
+</br> - Jalankan script dengan command yang ada pada gambar, maka kemudian traffic akan berjalan
+</br> <img width="857" height="160" alt="Screenshot 2025-09-29 223654" src="https://github.com/user-attachments/assets/6842e935-a14b-4a06-8e13-493545d84002" /> 
+</br> - Ketika sudah 10 detik maka hentikan wireshark, dan gunakan filter `ip.addr == 192.213.1.2`
+</b> - Kemudia simpan hasil capture yang sudah di filter tadi
+</br> <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ecbbd3c0-c2cb-43bf-b9eb-5c426f72b331" />
+
 
 [Soal 14]</br>
 [Soal 16]</br>
@@ -117,6 +130,3 @@ Setelah semua Ainur terhubung ke internet, Melkor mencoba menyusup ke dalam komu
 [Soal 18]</br>
 [Soal 19]</br>
 [Soal 20]</br>
-[creds](#creds)</br>
-[ATM or ATP or FTP ? 🤔](#atm-or-atp-or-ftp--🤔)</br>
-[How Many packets ?!](#how-many-packets)</br>
