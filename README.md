@@ -41,9 +41,67 @@ kemudian untuk memastikan bahwa sudah bisa terhubung ke jaringan kita sambungkan
 <img width="1259" height="594" alt="Screenshot 2025-09-29 195720" src="https://github.com/user-attachments/assets/a248d79f-6324-47a7-afb7-0cea58441e65" />
 
 ### Soal 3 </br>
-Sekarang pastikan agar setiap Ainur (Client) dapat terhubung satu sama lain. Soal ini meminta kita agar setiap client bisa terhubung, caranya dengan mengubah dan mengkonfigurasi masing-masing client pada gateway.
-[Soal 4]</br>
-[Soal 5]</br>
+Sekarang pastikan agar setiap Ainur (Client) dapat terhubung satu sama lain. Soal ini meminta kita agar setiap client bisa terhubung, caranya dengan mengubah dan mengkonfigurasi masing-masing client pada gateway dan IP Prefix
+</br> Melkor
+```
+auto eth0
+iface eth0 inet static
+	address 192.213.1.2
+	netmask 255.255.255.0
+	gateway 192.213.1.1
+```
+</br> Manwe
+```
+auto eth0
+iface eth0 inet static
+	address 192.213.1.3
+	netmask 255.255.255.0
+	gateway 192.213.1.1
+```
+</br> Varda
+```
+auto eth0
+iface eth0 inet static
+	address 192.213.2.2
+	netmask 255.255.255.0
+	gateway 192.213.2.1
+```
+</br> Ulmo
+```
+auto eth0
+iface eth0 inet static
+	address 192.213.2.3
+	netmask 255.255.255.0
+	gateway 192.213.2.1
+```
+kemudian IP masing-masing client akan kita sambungkan, dengan melakukan beberapa langkah : 
+</br> Install iptables pada linux dengan command `apt update && apt install iptables -y`
+</br> Masukkan command `iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.213.0.0/16` yang berfungsi agar semua perangkat yang terhubung bisa mengakses jaringan eksternal
+
+### Soal 4 </br>
+Setelah berhasil terhubung, sekarang Eru ingin agar setiap Ainur (Client) dapat mandiri. Oleh karena itu pastikan agar setiap Client dapat tersambung ke internet
+</br> Dengan Membuat tab linux baru untuk setiap client dan mencoba command yang disesuaikan dengan IP masing-masing client,
+</br> Melkor
+`telnet 10.15.43.32 5062`
+</br> Manwe
+`telnet 10.15.43.32 5025`
+</br> Ulmo
+`telnet 10.15.43.32 5043`
+</br> Varda
+`telnet 10.15.43.32 5033`
+</br> kemudian untuk memastikan sudah tersambung dengan command : 
+`echo nameserver 192.168.122.1 > /etc/resolv.conf`
+`cat /etc/resolv.conf`
+`ping google.com -c 5`
+
+### Soal 5 </br>
+Ainur terkuat Melkor tetap berusaha untuk menanamkan kejahatan ke dalam Arda (Bumi). Sebelum terjadi kerusakan, Eru dan para Ainur lainnya meminta agar semua konfigurasi tidak hilang saat semua node di restart.
+</br> Dengan cara menambhakan script serta mengkonfig ulang Eru dengan :
+```
+up apt update && apt install iptables
+up iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.242.0.0/16
+up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
 [Soal 6]</br>
 [Soal 14]</br>
 [Soal 16]</br>
