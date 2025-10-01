@@ -124,9 +124,32 @@ Setelah semua Ainur terhubung ke internet, Melkor mencoba menyusup ke dalam komu
 </br> <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ecbbd3c0-c2cb-43bf-b9eb-5c426f72b331" />
 
 
-[Soal 14]</br>
-[Soal 16]</br>
-[Soal 17]</br>
-[Soal 18]</br>
-[Soal 19]</br>
-[Soal 20]</br>
+### Soal 14 </br>
+Setelah gagal mengakses FTP, Melkor melancarkan serangan brute force terhadap  Manwe. Analisis file capture yang disediakan dan identifikasi upaya brute force Melkor. 
+(link file) nc 10.15.43.32 3401
+</br> ![WhatsApp Image 2025-09-30 at 10 55 00_02e9b739](https://github.com/user-attachments/assets/9e217add-a202-4148-9fc7-225bd3bfb1ac)
+
+### Soal 16 </br>
+Melkor semakin murka ia meletakkan file berbahaya di server milik Manwe. Dari file capture yang ada, identifikasi file apa yang diletakkan oleh Melkor.
+(link file) nc 10.15.43.32 3403
+</br> ![WhatsApp Image 2025-09-30 at 13 40 47_adf98f93](https://github.com/user-attachments/assets/4dbf9836-02c6-4e77-af61-b5ab7df5c486)
+
+### Soal 17 </br>
+Manwe membuat halaman web di node-nya yang menampilkan gambar cincin agung. Melkor yang melihat web tersebut merasa iri sehingga ia meletakkan file berbahaya agar web tersebut dapat dianggap menyebarkan malware oleh Eru. Analisis file capture untuk menggagalkan rencana Melkor dan menyelamatkan web Manwe.
+(link file) nc 10.15.43.32 3404
+</br> ![WhatsApp Image 2025-09-30 at 14 21 38_d642a440](https://github.com/user-attachments/assets/97ab3aa5-9d26-454e-8928-2169400b2ace)
+
+### Soal 18 </br>
+Karena rencana Melkor yang terus gagal, ia akhirnya berhenti sejenak untuk berpikir. Pada saat berpikir ia akhirnya memutuskan untuk membuat rencana jahat lainnya dengan meletakkan file berbahaya lagi tetapi dengan metode yang berbeda. Gagalkan lagi rencana Melkor dengan mengidentifikasi file capture yang disediakan agar dunia tetap aman.
+(link file) nc 10.15.43.32 3405
+</br> ![WhatsApp Image 2025-09-30 at 14 38 25_ca1a8fb9](https://github.com/user-attachments/assets/3c099a9d-9b10-4838-8ce0-49780f5b5fcc)
+
+### Soal 19 </br>
+Manwe mengirimkan email berisi surat cinta kepada Varda melalui koneksi yang tidak terenkripsi. Melihat hal itu Melkor sipaling jahat langsung melancarkan aksinya yaitu meneror Varda dengan email yang disamarkan. Analisis file capture jaringan dan gagalkan lagi rencana busuk Melkor.
+(link file) nc 10.15.43.32 3406
+</br> ![WhatsApp Image 2025-09-30 at 15 18 37_f66e9b14](https://github.com/user-attachments/assets/5e103a03-30e3-4f8f-bcc0-b3e2a5089a94)
+
+### Soal 20 </br>
+Untuk yang terakhir kalinya, rencana besar Melkor yaitu menanamkan sebuah file berbahaya kemudian menyembunyikannya agar tidak terlihat oleh Eru. Tetapi Manwe yang sudah merasakan adanya niat jahat dari Melkor, ia menyisipkan bantuan untuk mengungkapkan rencana Melkor. Analisis file capture dan identifikasi kegunaan bantuan yang diberikan oleh Manwe untuk menggagalkan rencana jahat Melkor selamanya.
+(link file) nc 10.15.43.32 3407
+</br> ![WhatsApp Image 2025-09-30 at 16 06 20_bf704f00](https://github.com/user-attachments/assets/fdf82ecb-d053-437f-82a6-c4467b6d37fa)
