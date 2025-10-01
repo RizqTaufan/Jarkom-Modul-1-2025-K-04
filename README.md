@@ -4,7 +4,7 @@ Anggota :
 | Nama | NRP |
 | -------------------- | ---------- |
 | Diva Aulia Rosa | 5027241003 |
-|  | 5027 |
+| Muhamad Rizq Taufan | 5027231021 |
 
 ## Soal & Dokumentasi pengerjaan
 
