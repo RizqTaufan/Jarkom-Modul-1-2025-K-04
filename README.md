@@ -10,6 +10,12 @@ Anggota :
 
 ### Soal 1 </br>
 Untuk mempersiapkan pembuatan entitas selain mereka, Eru yang berperan sebagai Router membuat dua Switch/Gateway. Dimana Switch 1 akan menuju ke dua Ainur yaitu Melkor dan Manwe. Sedangkan Switch 2 akan menuju ke dua Ainur lainnya yaitu Varda dan Ulmo. Keempat Ainur tersebut diberi perintah oleh Eru untuk menjadi Client.
+Jadi inti dari soal 1 adalah Membuat tpologi jaringannya dulu, dengan komposisi : 
+1 buah jaringan external
+1 buah Router (Eru)
+2 buah switch/gateway
+4 buah client
+
 [Soal 2]</br>
 [Soal 3]</br>
 [Soal 4]</br>
