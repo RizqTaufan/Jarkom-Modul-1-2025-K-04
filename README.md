@@ -102,7 +102,15 @@ up apt update && apt install iptables
 up iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.242.0.0/16
 up echo nameserver 192.168.122.1 > /etc/resolv.conf
 ```
-[Soal 6]</br>
+### Soal 6 </br>
+Setelah semua Ainur terhubung ke internet, Melkor mencoba menyusup ke dalam komunikasi antara Manwe dan Eru. Jalankan file berikut (link file) lalu lakukan packet sniffing menggunakan Wireshark pada koneksi antara Manwe dan Eru, lalu terapkan display filter untuk menampilkan semua paket yang berasal dari atau menuju ke IP Address Manwe. Simpan hasil capture tersebut sebagai bukti.
+</br> Untuk mengerjakan soal no.6 harus menggunakan aplikasi GNS3 client, dengan langkah :
+</br> - Install dan masuk menggunakan kredensial yang diberikan asisten
+</br> - Kemudian ke menu file, dan pilih open project & project library lalu pilih sesuai dengan kelompok yang telah diplotting.
+</br> <img width="1497" height="776" alt="Screenshot 2025-09-29 222354" src="https://github.com/user-attachments/assets/418a2b7d-0848-489b-90f7-48b2b39ef044" />
+</br> - Setelah berhasil masuk pada project kelompok maka, akan muncul topologi jaringan yang sudah dibuat sebelumnya pada web
+</br> <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2365d321-4964-4dd8-be55-23505439f7dd" />
+
 [Soal 14]</br>
 [Soal 16]</br>
 [Soal 17]</br>
