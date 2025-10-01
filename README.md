@@ -6,9 +6,10 @@ Anggota :
 | Diva Aulia Rosa | 5027241003 |
 |  | 5027 |
 
-## Daftar Isi
+## Soal & Dokumentasi pengerjaan
 
 ### Soal 1 </br>
+Untuk mempersiapkan pembuatan entitas selain mereka, Eru yang berperan sebagai Router membuat dua Switch/Gateway. Dimana Switch 1 akan menuju ke dua Ainur yaitu Melkor dan Manwe. Sedangkan Switch 2 akan menuju ke dua Ainur lainnya yaitu Varda dan Ulmo. Keempat Ainur tersebut diberi perintah oleh Eru untuk menjadi Client.
 [Soal 2]</br>
 [Soal 3]</br>
 [Soal 4]</br>
