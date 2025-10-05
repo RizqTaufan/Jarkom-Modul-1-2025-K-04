@@ -128,28 +128,61 @@ Setelah semua Ainur terhubung ke internet, Melkor mencoba menyusup ke dalam komu
 Setelah gagal mengakses FTP, Melkor melancarkan serangan brute force terhadap  Manwe. Analisis file capture yang disediakan dan identifikasi upaya brute force Melkor. 
 (link file) nc 10.15.43.32 3401
 </br> ![WhatsApp Image 2025-09-30 at 10 55 00_02e9b739](https://github.com/user-attachments/assets/9e217add-a202-4148-9fc7-225bd3bfb1ac)
+gunakan filter `http.request.method == "POST" or (http.response.code == 200 and frame contains "Success")`
+</br> <img width="1920" height="1080" alt="Screenshot 2025-10-02 203652" src="https://github.com/user-attachments/assets/837c954a-7085-4597-af79-c11ddd44d20b" />
+</br> pada gambar itu akan didapatkan informasi untuk soal-soal selanjutnya
+</br> <img width="847" height="530" alt="Screenshot 2025-10-02 204926" src="https://github.com/user-attachments/assets/e07cecbb-2e1d-4346-823c-36ffc5758b65" />
 
 ### Soal 16 </br>
 Melkor semakin murka ia meletakkan file berbahaya di server milik Manwe. Dari file capture yang ada, identifikasi file apa yang diletakkan oleh Melkor.
 (link file) nc 10.15.43.32 3403
 </br> ![WhatsApp Image 2025-09-30 at 13 40 47_adf98f93](https://github.com/user-attachments/assets/4dbf9836-02c6-4e77-af61-b5ab7df5c486)
+</br> mencari user dan pass menggunakan filter ftp
+<img width="1916" height="1012" alt="Screenshot 2025-10-02 215049" src="https://github.com/user-attachments/assets/8fbce4ff-de3a-4a25-919b-4264fb504bfd" />
+</br> terdapat request untuk user dan pass serta diikuti response 230-OK, yang berarti login berhasil
+</br> kemudian gunakan filter `ftp-data`, download filenya, simpan di directory linux, buka di terminal menggunakan `sha256sum <nama file>` untuk mengetahui hashnya berlaku untuk semua file yang lain
+
 
 ### Soal 17 </br>
 Manwe membuat halaman web di node-nya yang menampilkan gambar cincin agung. Melkor yang melihat web tersebut merasa iri sehingga ia meletakkan file berbahaya agar web tersebut dapat dianggap menyebarkan malware oleh Eru. Analisis file capture untuk menggagalkan rencana Melkor dan menyelamatkan web Manwe.
 (link file) nc 10.15.43.32 3404
 </br> ![WhatsApp Image 2025-09-30 at 14 21 38_d642a440](https://github.com/user-attachments/assets/97ab3aa5-9d26-454e-8928-2169400b2ace)
+</br> menggunakan Langkah-Langkah
+Buka menu File di Wireshark.
+Pilih Export Objects.
+Pilih HTTP.
+Wireshark akan menampilkan daftar semua objek (file, gambar, dokumen,dll.) yang ditransfer melalui protokol HTTP. Anda kemudian tinggal mencari file yang memiliki ekstensi mencurigakan atau muncul paling awal.
+untuk hash caranya sama seperti yang nomer sebelumnya.
 
 ### Soal 18 </br>
 Karena rencana Melkor yang terus gagal, ia akhirnya berhenti sejenak untuk berpikir. Pada saat berpikir ia akhirnya memutuskan untuk membuat rencana jahat lainnya dengan meletakkan file berbahaya lagi tetapi dengan metode yang berbeda. Gagalkan lagi rencana Melkor dengan mengidentifikasi file capture yang disediakan agar dunia tetap aman.
 (link file) nc 10.15.43.32 3405
 </br> ![WhatsApp Image 2025-09-30 at 14 38 25_ca1a8fb9](https://github.com/user-attachments/assets/3c099a9d-9b10-4838-8ce0-49780f5b5fcc)
+</br> File→Export Objects→HTTP (tidak ditemukan apapun)
+File→Export Objects→SMB (ada 2 file dengan format .exe)
+<img width="1920" height="1080" alt="Screenshot 2025-10-04 081645" src="https://github.com/user-attachments/assets/0e6b3d96-e64e-4587-b4f5-2050c6df767f" />
+</br> file berbahaya ada 2, selebihnya caranya sama seperti yang lain untuk hashnya
 
 ### Soal 19 </br>
 Manwe mengirimkan email berisi surat cinta kepada Varda melalui koneksi yang tidak terenkripsi. Melihat hal itu Melkor sipaling jahat langsung melancarkan aksinya yaitu meneror Varda dengan email yang disamarkan. Analisis file capture jaringan dan gagalkan lagi rencana busuk Melkor.
 (link file) nc 10.15.43.32 3406
 </br> ![WhatsApp Image 2025-09-30 at 15 18 37_f66e9b14](https://github.com/user-attachments/assets/5e103a03-30e3-4f8f-bcc0-b3e2a5089a94)
+</br> gunakan filter tcp
+</br> <img width="1918" height="606" alt="Screenshot 2025-10-03 182841" src="https://github.com/user-attachments/assets/b2927460-202a-45f9-8e6c-73d4d5159f79" />
+</br> terlihat ada aktivitas pengiriman pesan email, disana terdapat semua informasi yang digunakan untuk menjawab soal
+
 
 ### Soal 20 </br>
 Untuk yang terakhir kalinya, rencana besar Melkor yaitu menanamkan sebuah file berbahaya kemudian menyembunyikannya agar tidak terlihat oleh Eru. Tetapi Manwe yang sudah merasakan adanya niat jahat dari Melkor, ia menyisipkan bantuan untuk mengungkapkan rencana Melkor. Analisis file capture dan identifikasi kegunaan bantuan yang diberikan oleh Manwe untuk menggagalkan rencana jahat Melkor selamanya.
 (link file) nc 10.15.43.32 3407
 </br> ![WhatsApp Image 2025-09-30 at 16 06 20_bf704f00](https://github.com/user-attachments/assets/fdf82ecb-d053-437f-82a6-c4467b6d37fa)
+</br> metode yang biasanya digunakan itu tls/ssl dan ssh, jadi coba dulu satu”
+untuk yang ssh gak keluar, yang tls keluar
+</br> <img width="1919" height="522" alt="Screenshot 2025-10-03 183737" src="https://github.com/user-attachments/assets/baf7151e-865e-485b-ba38-79c5189d96de" />
+</br> ditemukan client hello dan server hello
+</br> <img width="1920" height="1080" alt="Screenshot 2025-10-03 184158" src="https://github.com/user-attachments/assets/3ae4075a-f8ec-44f0-9fed-6081a5cb1264" />
+</br> untuk filenya membuka export http, dimana biasanya terdapat file yang dikirim 
+download dan untuk hash lakukan yang sama seperti metode sebelumnya
+
+
+
